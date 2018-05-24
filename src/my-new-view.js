@@ -2,6 +2,9 @@
 import { PolymerElement, html} from '@polymer/polymer/polymer-element.js';
 //importing the view styles
 import './shared-styles.js';
+//importing paper-checkbox.js
+import '@polymer/paper-checkbox/paper-checkbox.js'
+
 
 class MyNewView extends PolymerElement{
     
@@ -16,9 +19,10 @@ class MyNewView extends PolymerElement{
                 padding: 10px;
             }
           </style>
-          <div class="card">
+          <div class="card"> 
             <div class="circle">1</div>
             <h1>New View</h1>
+            <paper-checkbox>Ready to deploy!</paper-checkbox>
             <p>New View!!</p>
           </div>
         
